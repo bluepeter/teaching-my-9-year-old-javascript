@@ -1,5 +1,5 @@
 document.open();
-function k(adj) {
+function myFunction(adj) {
   document.write("<style>h1 {color: moonlightblue;}</style>");
   let peterJobs = [["Mcdonalds","stinky"], ["fluxguard","great"], ["cybersight","cool"]];
   for (let i = 0; peterJobs.length > i; i++) { 
@@ -9,6 +9,6 @@ function k(adj) {
   }
 }
 
-k("stinky");
-k("coooooooooooooooooooooooooooooooooollllllllll");
-k("Greeeeeeeeeaat");
+myFunction("stinky");
+myFunction("coooooooooooooooooooooooooooooooooollllllllll");
+myFunction("Greeeeeeeeeaat");
