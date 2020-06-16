@@ -1,0 +1,56 @@
+<html>
+
+
+<head>
+  <style>
+    h1 {
+      color: red;
+      font-size: 100px;
+    }
+
+    #imgOne {
+      width: 100%;
+      border: 10px solid blueviolet
+    }
+
+    body {
+      background: -webkit-linear-gradient(red, rgb(180, 112, 47), rgb(128, 26, 0));
+    }
+  </style>
+
+  <script>
+    function check(element) {
+      if (element.value === "jasmine" || element.value === "Jasmine") {
+        document.getElementById("mummy").style.display = "";
+      } else if (element.value === "aizu") {
+        document.getElementById("aizu").style.display = "";
+      }
+
+    }
+  </script>
+</head>
+
+<body>
+  <center>
+    <b>What is your name?</b>
+    <input type="text" onchange="check(this)"><br />
+  </center>
+  <div id="mummy" style="display: none">
+    <img src="unnamed.jpg" id="imgOne">
+    <img src="unnamed-1.jpg" id="imgOne">
+    <img src="a.jpeg" id="imgOne">
+    <h1>Happy Birthday Mummy!</h1>
+    <h4>Thank 
+    you for being a great mom. One great memory I remenber is when we went to europe two times. thankyou for
+      planning <strong>both times.</strong>
+      <p>One sweet momment I will always remenber with you is when we go on walks and you always bring me either a juice candy or a sweater.And you never conplain adout walks. <h1>We love you</h1>
+    </h4>
+  </div>
+  <div id="aizu" style="display: none">
+    <img src="shiba.jpg" id="imgOne">
+    <h1>hi aizu!</h1>
+    <h4></h4>
+  </div>
+</body>
+
+</html>
