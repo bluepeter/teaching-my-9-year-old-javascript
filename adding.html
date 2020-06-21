@@ -1,0 +1,33 @@
+<html>
+
+<head>
+  <script>
+    function runStuff() {
+      document.getElementById("numberOne").innerHTML = Math.floor(Math.random() * 101);
+      document.getElementById("numberTwo").innerHTML = Math.floor(Math.random() * 101);
+    }
+
+    function check(event) {
+      //alert(Number(document.getElementById("numberOne").innerHTML) + Number(document.getElementById("numberTwo").innerHTML));
+      if (Number(event.value) === Number(document.getElementById("numberOne").innerHTML) + Number(document.getElementById("numberTwo").innerHTML)) {
+        alert("correct")
+      } else {
+        alert("incorrect")
+      }
+    }
+  </script>
+</head>
+
+<body onload="runStuff()">
+  <center>
+    <b>What is <span id="numberOne"></span> + <span id="numberTwo"></span>?</b>
+    <p />
+    <input type="text" onchange="check(this)"><br />
+  </center>
+  <div id="correct" style="display: none">
+    That is correct!
+  </div>
+  <div id="incorrect" style="display: none">That is incorrect.</div>
+</body>
+
+</html>
