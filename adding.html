@@ -10,9 +10,13 @@
     function check(event) {
       //alert(Number(document.getElementById("numberOne").innerHTML) + Number(document.getElementById("numberTwo").innerHTML));
       if (Number(event.value) === Number(document.getElementById("numberOne").innerHTML) + Number(document.getElementById("numberTwo").innerHTML)) {
-        alert("correct")
+        // alert("correct")
+        document.getElementById("correct").style.display = "";
+        document.getElementById("incorrect").style.display = "none";
       } else {
-        alert("incorrect")
+       // alert("incorrect")
+        document.getElementById("incorrect").style.display = "";
+        document.getElementById("correct").style.display = "none";
       }
     }
   </script>
