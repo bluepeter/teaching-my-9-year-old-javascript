@@ -13,11 +13,20 @@
         // alert("correct")
         document.getElementById("correct").style.display = "";
         document.getElementById("incorrect").style.display = "none";
+        let people = [
+          { name: "frank", age: Math.floor(Math.random() * 101), feetSize: 17 },
+          { name: "icsnerf", age: 7392546719348, feetSize: 56 }, { name: "peter is super stinky" }
+        ];
+        people.push({ name: "doctor" });
+        document.getElementById("name").innerHTML = people[Math.floor(Math.random() * people.length)].name;
+        //Math.round(Math.random() * )
+
       } else {
-       // alert("incorrect")
-        document.getElementById("incorrect").style.display = "";
-        document.getElementById("correct").style.display = "none";
+        // alert("incorrect")
+        document.getElementById("incorrect").style.display = "none";
+        document.getElementById("correct").style.display = "";
       }
+      runStuff();
     }
   </script>
 </head>
@@ -29,7 +38,7 @@
     <input type="text" onchange="check(this)"><br />
   </center>
   <div id="correct" style="display: none">
-    That is correct!
+    That is correct! <span id="name"></span>
   </div>
   <div id="incorrect" style="display: none">That is incorrect.</div>
 </body>
